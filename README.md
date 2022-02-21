@@ -48,7 +48,7 @@ void demo()
         B* b = abc_pool.construct<B>();
         C* c = abc_pool.construct<C>();
 
-        // int* x = abc_pool.construct<int>(); // Compile error! Multipool does not support this type.
+        // int* x = abc_pool.construct<int>(); // Compile error! `abc_pool` does not pool this type.
         
         // Can destroy these objects - does not call free().
         abc_pool.destroy(a);
